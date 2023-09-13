@@ -1,44 +1,59 @@
 .menu-bar__container{
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	position: fixed;
-	z-index: 999;
-	background-color: #ffffff;
+  padding: 0 4%;
 	width: 100%;
-	height: 40px;
+	height: 3rem;
 	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+	background-color: #ffffff;
+	z-index: 999;
 }
 
 .menu-bar__logo{
-  margin-left: 30px;
   display: flex;
   align-items: center;
 }
 
-.menu-bar__item{
+.social-medias {
   display: flex;
-  margin:auto;
+  flex-direction: row;
+  justify-content: start;
   align-items: center;
+  gap: 1rem;
 }
 
-.menu-bar__item > ul{
-	display: flex;
-	list-style-type: none;
+.social-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
 }
 
-.menu-bar__item > ul > li {
-	padding: 5px;
-	margin-right: 15px;
-}
-
-.menu-bar__item > ul > li > a {
-	text-decoration: none;
+.social-media-item a {
+  text-decoration: none;
 	padding: 5px;
 	color: rgb(7, 7, 7);
 	font-family: 'Segoe UI';
 }
 
-.menu-bar__item > ul > li > a:hover {
+.social-media-item a:hover {
 	color: blue;
 	font-weight: 600;
+}
+
+.social-media-item a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+	transition: .2s;
+}
+
+.social-media-item a img:hover {
+  scale: 1.2;
 }

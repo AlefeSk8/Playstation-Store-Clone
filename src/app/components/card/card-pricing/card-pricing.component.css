@@ -1,4 +1,4 @@
-.card-pricing__container{
+.card-pricing__container {
 	position: absolute;
 	bottom:0px;
 	left: 0;
@@ -12,7 +12,7 @@
 	font-family: Calibri;
 }
 
-.card-pricing__title{
+.card-pricing__title {
 	margin-bottom: 3px;
 }
 
@@ -22,12 +22,12 @@
 	justify-content: space-between;
 }
 
-.card-pricing__value__console{
+.card-pricing__value__console {
 	display: flex;
 	flex-direction: row;
 }
 
-.card-pricing__value__console > span{
+.card-pricing__value__console > span {
 	font-weight: bolder;
 	color:aqua;
 	margin-right: 10px;
